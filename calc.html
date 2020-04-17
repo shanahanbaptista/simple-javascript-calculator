@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My Calculator</title>
+<style>
+    * {
+        font-family: 'Arial';
+        color: black;
+        font-size: 22px;
+    }
+    body {
+        background-color: white;
+    }
+    .container {
+        width: 300px;
+        background-color: white;
+        margin: 100px auto;
+    }
+    table {
+        width: 100%;
+        border-color: grey;
+    }
+    td {
+        width: 30%;
+    }
+    button {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background: #f7f7f7;
+    }
+
+    #displayValue {
+        height: 35px;
+        font-size: 30px;
+        vertical-align: bottom;
+        text-align: right;
+        padding-right: 16px;
+        background-color: white;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <table border="2" cellspacing="0">
+            <tr>
+                <td colspan="5" id="Title">My Calculator</td>
+            </tr>
+            <tr>
+                <td colspan="5" id="displayValue"></td>
+            </tr>
+            <tr>
+                <td><button onclick="onBtn();">On</button></td>
+                <td><button onclick="offBtn();">Off</button></td>
+                <td><button onclick="clearBtn();">Clear</button></td>
+                <td colspan="2"><button onclick="inputBtn(this);">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inputBtn(this);">7</button></td>
+                <td><button onclick="inputBtn(this);">8</button></td>
+                <td><button onclick="inputBtn(this);">9</button></td>
+                <td colspan="2"><button onclick="inputBtn(this);">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inputBtn(this);">4</button></td>
+                <td><button onclick="inputBtn(this);">5</button></td>
+                <td><button onclick="inputBtn(this);">6</button></td>
+                <td colspan="2"><button onclick="inputBtn(this);">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inputBtn(this);">1</button></td>
+                <td><button onclick="inputBtn(this);">2</button></td>
+                <td><button onclick="inputBtn(this);">3</button></td>
+                <td colspan="2"><button onclick="inputBtn(this);">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inputBtn(this);">0</button></td>
+                <td><button onclick="inputBtn(this);">.</button></td>
+                <td><button onclick="inputBtn(this);">=</button></td>
+                <td><button onclick="inputBtn(this);">(</button></td>
+                <td><button onclick="inputBtn(this);">)</button></td>
+            </tr>
+        </table>
+    </div>
+ 
+    <script src="calculator.js"></script>
+</body>
+</html>
